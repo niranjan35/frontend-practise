@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			.star {
+				height: 30px;
+				width: 30px;
+				border-radius: 50%;
+				background-color: white;
+				animation-iteration-count: infinite;
+			}
+			.star1 {
+				position: absolute;
+				margin-left: 60%;
+				margin-top: 15%;
+				animation-name: twinkle-1;
+				animation-duration: 1s;
+			}
+			.star2 {
+				position: absolute;
+				margin-top: 25%;
+				margin-left: 25%;
+				animation-name: twinkle-2;
+				animation-duration: 1s;
+			}
+			@keyframes twinkle-1 {
+				50% {
+					transform: scale(0.5);
+					opacity: 0.5;
+				}
+			}
+			@keyframes twinkle-2 {
+				20% {
+					transform: scale(0.5);
+					opacity: 0.5;
+				}
+			}
+			.back {
+				height: 100%;
+				width: 100%;
+				position: fixed;
+				top: 0;
+				left: 0;
+				margin: 0;
+				padding: 0;
+				background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="back"></div>
+		<div class="star1 star"></div>
+		<div class="star2 star"></div>
+	</body>
+</html>

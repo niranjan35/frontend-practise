@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			.ball {
+				background: linear-gradient(35deg,
+				      #ccffff,
+				      #ffcccc);
+				position: absolute;
+				height: 50px;
+				width: 50px;
+				border-radius: 50%;
+				animation-iteration-count: infinite;
+			}
+			.ball-1 {
+				margin-left: 30%;
+				margin-top: 10%;
+				animation-timing-function: linear;
+				animation-name: fall-1;
+				animation-duration: 1s;
+			}
+			.ball-2 {
+				margin-top: 10%;
+				margin-left: 70%;
+				animation-timing-function: ease-out;
+				animation-name: fall-2;
+				animation-duration: 1s;
+			}
+			@keyframes fall-1 {
+				0% {
+					top: 0%;
+				}
+				50% {
+					width: 75px;
+					height: 25px;
+					top: 70%;
+				}
+				100% {
+					top: 0%;
+				}
+			}
+			@keyframes fall-2 {
+				0% {
+					top: 0%;
+				}
+				50% {
+					width: 75px;
+					height: 25px;
+					top: 70%;
+				}
+				100% {
+					top: 0%;
+				}
+			}
+			.back {
+				position: fixed;
+				height: 100%;
+				width: 100%;
+				background-color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="back"></div>
+		<div class="ball-1 ball"></div>
+		<div class="ball-2 ball"></div>
+		
+	</body>
+</html>

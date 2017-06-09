@@ -1,0 +1,36 @@
+body{
+	background-color: #FFFFFF;
+}
+
+.fluid-container{
+  margin: 5% 5% 0% 5%;
+  padding: 2%;
+  background-color: #DCDCDC;
+}
+
+h1{
+	text-align: center;
+	font-family: helvetica;
+}
+
+h5{
+	text-align: center;
+	font-family: monospace;
+}
+
+#image-table{
+	background-color: white;
+	width: 100%;
+	border-radius: 10%;
+}
+
+#image-container{
+	border-radius: 50%;
+	border-color: black;
+	border-image-width: 10px;
+}
+
+.content-container{
+	padding: 10%;
+	padding-top: 3%;
+}
